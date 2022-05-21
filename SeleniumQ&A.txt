@@ -1,0 +1,51 @@
+1. What is Selenium? What are the different Selenium components? Explain about Selenium Webdriver.
+     -Selenium is a free automated testing framework used to validate web applications across different browsers and platforms
+     -We can use multiple programming laungages like Java,C#,Python etc to create Selenium test scripts.
+     Components:Selenium Grid,Selenium RC,Selenium Web Driver,Selenium IDE.
+     Selenium Webdriver:It is a successor to selenium RC.Selenium webdriver accepts commands and sends them to a browser. It does not need a special server to execute tests.
+
+2. How does Selenium communicate with the Web browsers?
+     -Selenium WebDriver is a browser automation framework that accepts commands and sends them to a browser. It is implemented through a browser-specific driver. It controls the browser by directly communicating with it.
+
+3.What are the locators available  to find an element using Selenium?
+    -By ID
+    -By name
+    -By classname
+    -By tag name
+    -By linkText
+    -By partial link text
+    -By CSS
+    -By Xpath 
+
+4. Why ID is preferable than X-Path?
+   ID are unique on any HTML page.
+   Whereas, Xpath browser iterates through entire DOM structure to find element.Which is pretty ineffient.
+    
+5.How to select value in dropdown?
+   WebElement dd1=driver.findElement(By.id("dropdown1"));
+   Select dropdown1=new Select(dd1);
+   dropdown1.selectByVisibleText("Appium");
+      
+6) What is the difference between Absolute Path and Relative Path?
+   Absolute path:It specifies the location from the root directory.
+   Relative path:It is related to the current directory.
+   
+7) How to verify if the given check box is checked or not (it is not taught but you can explore) Try here: http://leafground.com/pages/checkbox.html
+     We can used the isSelected() method over the checkbox element. 
+     The isSelected() method returns a boolean value of true if the checkbox is checked false otherwise
+  
+8)Difference between System.setProperty and WebDriverManager
+     -WebDriverManager-- is an API that allows users to automate the handling of driver executables like chromedriver.exe
+      WebDriverManager.chromedriver().setup();
+      It checks the version of the browser and driver.
+     -System.setProperty  method to used to set its path.
+      System.setProperty("webdriver.chrome.driver", "/absolute/path/to/binary/chromedriver");
+9) Write the syntax for preceding and following x-paths.
+     Elder cousin xpath//following::Younger cousin tagname[index]
+     Younger cousing xpath//preceding::tagname
+
+10) How to get an attribute value using Selenium WebDriver?
+     WebDriverManager.chromedriver().setup();
+     ChromeDriver driver=new ChromeDriver();
+     driver.get("https://www.facebook.com/");
+     
