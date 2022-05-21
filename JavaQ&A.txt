@@ -1,0 +1,62 @@
+1.Main method in Java:
+       -Starting point for JVM to start execution of a java program.
+       -Without the main() method,JVM will not execute the program.
+
+2.Different control flow statement:
+   -Decision Making--if,if-else,switch
+   -looping--for,while,do-while
+   -Branching--break,continue,return
+
+3.Defference between break and continue statement
+   -Break:Mainly used to terminate the enclosing loop such as while,do-while,for or switch statement wherever break is declared.
+   -Continue:It skip the rest of loop wherever continue is declared and execute the next iteration.
+
+4.Array and array declaration:
+   Array is used to store the multiple values in same data type.
+   Array declared in 2 ways,
+      1.Literal-Its stored in constant memory pool
+        int[] arr={1,2,3,5,3,7,8};
+      2.New keyword-Stored in heap memory.
+        int[] arr=new int[3];
+
+5.When will you get ArrayIndexOutOfBoundsException?
+     It occurs whenever we are trying to access any item of an array at an index which is not present in the array. The index may be negative or exceed the size of an array.
+
+6.Define the Syntax to create an object for a class.
+What are the naming conventions to be followed while creating a class, 
+method and a variable.Explain with examples.
+   Syntax:Classname ogject=new Constructor();
+   Naming conventions:
+     -Class--mixed cases, first letter of each internal word is capitalized.
+      Ex:public class ArrayOfValues{
+           }
+     -Method--mixed cases,first letter is lowercase and with the first letter of each internal word capitalized. (Camelcase letters)
+      Ex:public void addIntegers()
+     -Variable--Name should be short yet meaningful,should not start with underscore or dollar charcters.
+      Ex:int arr=2;
+
+7.Variable and its declaration:
+    Basic unit of storage in a program.
+    Variable is a data container that saves the data values during program execution.
+    And also variable can be changed during program execution.
+    Declaration:
+       Datatype variblename=datavalues;
+
+8.What is String in java? Is it a Data Type?
+   String is a sequence of character.Its a class and immutable,can't change the values of string during runtime.
+   It is used to create and manipulate strings.
+
+9.What are the different ways to create the String Object in java?
+    1.Literal-(Stored in constant memory pool),Proper sequence of characters,it is enclosed in double-quotes from the source set of characters.
+      String  str="Programming";
+    2.New keyword-(Stored in heap memory)
+      String str=new String();
+
+10.What is the Difference between .Equals and ==? 
+    -Both .equal and == operators are used to compare two objects in java.
+    -'==' operator compares reference or memory location of objects in heap.
+    -.equals compares the content of the string or object.
+
+
+
+   
