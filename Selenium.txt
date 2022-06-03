@@ -1,0 +1,49 @@
+1)What Are The Execptions Thrown By Alert,Frame ,Windows ?
+   -NoAlertPresentException
+   -NoSuchElementException
+   -NoSuchFrameException
+   -NoSuchWindowException
+
+2) What are the three types of alerts? Various actions that can be performed on an alert? Can you take screen shot of an alert?
+   -1.Simple alert-if it is ok or dismiss it perform the same action
+    2.Confirmation Alert-ok/cancel
+    3.Prompt Alert-we can  pass the values
+   -We can't take the screenshot of alert.
+
+3) How to handle the frame in Selenium Webdriver?
+    -Selenium can handle frames by switching the webdriver access from the main page to the frame.
+    -driver.switchTo().defaultContent();
+     driver.switchTo().frame(1);
+    
+4) Assume you are within a frame. Explain how can you switch back from a frame.
+    -We use the default content to switch one from to another.
+    -defaulcontent-its control come outside of the frame
+    -driver.switchTo().defaultContent();
+     driver.switchTo().frame(1);
+
+5) Explain the difference between getWindowHandle and getWindowHandles.
+    -getWindowHandle()-it return set, current window
+    -getWindowHandles()-child window
+
+6) How will you close all the windows open except the parent window?
+    -getWindowHandles() method is used to find the child window.
+    -Iterate the windows and use driver.close() method to close the child window except parent.
+    - String parentWidnow = driver.getWindowHandle();
+      Set<String> childWidnows= driver.getWindowHandles();
+      for (String childWidnow: childWidnows) {
+      if (!str.contains(parentWindow)) {
+          driver.close();
+         }
+       }
+
+7) To close an alert, use either dismiss (negative) or accept (positive) method.
+    -Alert alert=driver.switchTo().alert();
+     alert.accept();
+
+8)How To Move The Control To Last Window Opened By Selenium?
+    - SwitchTo Window – WebDriver supports moving between named windows using the “switchTo” method.
+      driver.switchTo().window("windowName");
+
+9)Different between parentframe and defaultcontent?
+   -defaulcontent-its control come outside of the frame
+   -parentframe-frame finds the parentframe

@@ -1,0 +1,39 @@
+1.What is oops stands for?
+    -Oops Stands for object oriented programming language/Structure.
+
+2.What is Polymorphism? explain types?
+    -Polymorphism allows us to perform a single action in different ways.
+    - Polymorphism allows you to define one interface and have multiple implementations
+
+3.what is interface and example in selenium,java?
+    -Interface is a design,Statement end with semicolon(;).
+    -Static constant and abstract methods. 100% unimplemented methods
+     -Ex:Java-List,Set,collection
+         Selenium-WedDriver,webelement,TakeSnapShot
+
+4.what is abstarct class and example?
+     -Abstract class is a partially implemented +unimplemented methods.
+     -We can create a object because of unimplemented methods.
+      Ex:java:AbstractList,AbstractCollections
+         Selenium:By     
+
+5.Difference between multiple inheritance and multilevel inheritance
+     -Multiple-(does not possible for class,java as class level) if it create mulitple class then it execute ambiguity problem
+     -Multilevel-grand parent-->parent-->subclass---chromedriver extends chromiumdriver extends Remotedriver(webdriver-printpages,takescreenshot)
+
+6.Is multiple inheritance possible in java?
+     -It is not possible in java because java as class level, When it create multiple class then it execute ambiguity problem.
+
+7.What is keyword for using inheritance 
+     -Extend keyword used in inheritance concept
+ 
+8.what is the keyword to connect interface and class
+     -Implements key word used to connect iterface and class
+
+9.what is difference between class and interface
+     -Class is a blueprint or template used to create object with common variables and methods.In class we create object.
+     -Interface is a design, we can't create object in interface
+
+10.what is difference between class and abstract class
+     -partially implemented-implement+unimplement is abstract class,class also abstract class
+     -we cant create the object because of unimplemented methods
